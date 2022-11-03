@@ -1,0 +1,295 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body{
+  font-family: 'Didact Gothic';
+  background: black;
+  color: white;
+}
+nav{
+  background: black;
+  width: 100%;
+}
+
+label.logo {
+  color: white;
+  padding-top: 30px;
+  padding-left: 40px;
+  font-weight: bold;
+}
+
+.ulogo {
+  width: 60px;
+  height: 80px;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 100px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #f5e39d;
+  font-size: 17px;
+  font-family: 'Poiret One';
+  padding: 7px 15px;
+  border-radius: 3px;
+}
+a:hover{
+  font-size: 30px;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 40px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  padding-top: 40px;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+    color: #f5e39d;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: gold;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+.about {
+  margin:  0 auto;
+  display: inline-flex;
+  width: 100%;
+  justify-content: center;
+ }
+
+ .abtimg {
+  width: 500px;
+  height: 500px;
+  padding-top: 60px;
+  padding-left: 60px;
+  padding-bottom: 60px;
+ }
+
+ .about-text {
+  padding-top: 60px;
+  padding-left: 50px;
+  padding-bottom: 40px;
+  padding-right: 50px;
+}
+
+.abouth1 {
+  padding-bottom: 30px;
+  font-size: 40px;
+  font-family: 'Poiret One';
+}
+
+.aboutbtn {
+background-color: hsl(48, 81%, 58%);
+width: 100px;
+height: 40px;
+border: none;
+border-radius: 10px;
+margin-top: 20px;
+font-family: 'Didact Gothic';
+}
+
+@media (max-width: 800px) {
+  .about {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .abtimg {
+    width: 60%;
+    height: 90%;
+    padding-bottom: 0px;
+  }
+}
+.slider {
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  
+  
+  
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  
+  /*
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+  */
+}
+.slides::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.slides::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+.slides::-webkit-scrollbar-track {
+  background: transparent;
+}
+.slides > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 300px;
+  height: 300px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background: #eee;
+  transform-origin: center center;
+  transform: scale(1);
+  transition: transform 0.5s;
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+.slides > div:target {
+  transform: scale(0.8);
+}
+
+#exhibitions {
+  height: 650px;
+  background: #010101;
+  color: white;
+}
+
+#exhibitions {
+  background-image: url(uliuwahero.png), linear-gradient(0deg, rgba(231, 183, 11, 0.5), rgba(231, 183, 11, 0.5));
+  padding-bottom: 30px;
+
+}
+
+.exheading {
+  text-align: center;
+}
+
+.aexh {
+  padding: 20px 40px;
+  color:azure;
+}
+
+.exh1 {
+ margin:  0 auto;
+ display: inline-flex;
+ width: 100%;
+ justify-content: center;
+}
+
+.exhimg {
+  width: 400px;
+  height: 410px;
+  padding: 40px;
+}
+
+.exhtext {
+  width: 400px;
+  height: 410px;
+  padding: 40px;
+}
+
+.exhheading {
+  padding-top: 55px;
+    font-size: 60px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.exhname {
+  font-family: 'Didact Gothic';
+  font-size: 36px;
+}
+
+.exhtexth6 {
+  padding-bottom: 10px;
+}
+
+.icons {
+  padding: 30px;
+  transition:.5s; /* this is grow duration */
+}
+
+.icons:hover {
+    transform:scale(1.5); /* this is grow amount */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#exhibitions1 {
+  background-image: url(art/elation.png);
+  padding-bottom: 30px;
+  height: 650px;
+  color: white;
+  display: none;
+}
+
+#exhibitions2 {
+  background-image: url(art/humanfishbg.png);
+  padding-bottom: 30px;
+  height: 650px;
+  color: white;
+  display: none;
+}
