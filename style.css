@@ -1,0 +1,440 @@
+* {
+    padding: 0;
+    margin: 0;   
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Didact Gothic';
+ }
+  body{
+    background: white;
+    color: black;
+    width: 100%;
+  }
+
+
+  .navbar {
+    background-color: #000000; 
+    color: white;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    
+  }
+
+  #logo {
+    width: 60px;
+    height: 100px;
+    top: -10;
+    margin-left: 20px;
+  }
+  .navlist {
+    float: left;
+    display: block;
+    color: white; 
+    width: 100%; 
+  }
+  .logo{
+    white-space: nowrap;
+    height: 100%;
+  }
+  .navlink {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    margin-top: 10px;
+  }
+
+  .navlist li {
+   margin: 20px;
+   padding: 10px 0px;  
+  }
+  .navlist li:hover, .navlink.active {
+    background-color: gold;
+    color: black;
+  }
+
+  .navcl {
+    float: right;
+    font-size: 39px;
+    color: gold;
+    margin-right: 20px;
+vertical-align: middle;
+  }
+
+  .navlist {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    #logo {
+      width: 40px;
+      height: 60px;
+      margin-left: 20px;
+    }
+.logo {
+padding-top: 5px;
+}
+  }
+
+  #navhide  {
+    display: none;
+    transition: ease-in 2s;
+  }
+ #hero {
+    width: 100%;
+    height: 500px;
+    background-color: #010101;
+    text-align: center;
+}
+
+.hero {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+
+.fa-brands {  
+    transition:.5s; /* this is grow duration */
+  }  
+  
+  .fa-brands:hover {
+    transform:scale(1.5); /* this is grow amount */
+    }
+  
+  .fa-facebook {  
+    background: transparent;  
+    padding-right: 35px; 
+    color: white;  
+  }  
+  
+  .fa-twitter {  
+    background: transparent;  
+    color: white; 
+    padding-left: 35px;
+   }
+  
+  .fa-instagram {  
+      background: transparent;  
+      color: white; 
+     }
+  
+      .fa-pinterest {  
+        background: transparent;  
+        color: white; 
+        padding-left: 35px; }
+  
+  .socmedia {
+       padding: 20px; 
+      }
+
+      .about {
+        text-align: center;
+        color: white;
+        background-color: #e7b70b;
+    }
+    
+    .heading {
+        padding-top: 91px;
+        font-size: 60px;
+        padding-bottom: 30px;
+        text-align: center;
+        font-family: 'Poiret One';
+        font-weight: lighter;
+    }
+    
+    .text {
+        padding-left: 100px;
+        padding-right: 100px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        padding-bottom: 57px;
+    }
+    
+    @media screen and (max-width: 697px) {
+        .heading {
+            padding-top: 50px;
+            font-size: 60px;
+            padding-bottom: 20px;
+        }
+        
+        .text {
+            padding-left: 20px;
+            padding-right: 20px;
+            text-align: justify;
+            letter-spacing: 0.02em;
+            padding-bottom: 57px;
+        }
+    }
+
+    .artists {
+      display: grid;
+      grid-template-columns: auto;
+      justify-content: center;
+      row-gap: 30px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .artistimg {
+      width: 80%;
+      height: 90%;
+    }
+    @media screen and (min-width: 947px) {
+      .artists {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+      }
+    }
+
+    @media screen and (min-width: 697px) and (max-width: 946px) {
+      .artists {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-evenly;
+      }
+    }
+
+    .artheading {
+      font-size: x-large;
+    }
+
+.exheading {
+  text-align: center;
+}
+
+.aexh {
+   padding: 0px 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+#exhibitions {
+  padding-top: 30px;
+  margin-top: 30px;
+}
+
+.exhname {
+  font-family: 'Poiret One';
+}
+
+.exhtexth6 {
+  padding-bottom: 15px;
+}
+
+.exhimg {
+  width: 235px;
+  height: 270px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+.exh1 {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: 90%;
+  margin: 0 auto;
+  justify-content: space-around;
+  row-gap: 20px;
+}
+
+.exhtext {
+  text-align: justify;
+  line-height: 20px;
+}
+
+.exhicons {
+  text-align: center;
+  padding-top: 20px;
+  
+}
+
+.icons {
+  padding: 0px 10px 0px 10px;
+  transition: 300ms;
+}
+
+.icons:hover {
+  transform: scale(1.2, 1.5);
+}
+
+#exhibitions0 {
+  background: url(uliuwahero.png);
+  color: white;
+  padding-bottom: 30px;
+}
+
+.exhheading {
+  font-size: 40px;
+  font-weight: lighter;
+  font-family: 'Poiret One';
+  padding: 10px 0px;  
+}
+
+#exhibitions1 {
+  background-image: url(art/elation.png);
+  padding-bottom: 30px;
+  color: white;
+  display: none;
+}
+
+#exhibitions2 {
+  background-image: url(art/humanfishbg.png);
+  padding-bottom: 30px;
+  color: white;
+  display: none;
+}
+
+@media screen and (min-width: 697px) {
+  #exhibitions0 {
+    height: auto;
+    background: #010101;
+    color: white;
+  }
+  
+  #exhibitions0 {
+    background-image: url(uliuwahero.png), linear-gradient(0deg, rgba(231, 183, 11, 0.5), rgba(231, 183, 11, 0.5));
+    padding-bottom: 30px;
+  
+  }
+  
+  .exheading {
+    text-align: center;
+  }
+  
+  .aexh {
+    padding: 20px 40px;
+    color:azure;
+  }
+  
+  .exh1 {
+   margin:  0 auto;
+   display: inline-flex;
+   width: 100%;
+   justify-content: center;
+  }
+  
+  .exhimg {
+    width: 400px;
+    height: 410px;
+    padding: 40px;
+  }
+  
+  .exhtext {
+    width: 400px;
+    height: 410px;
+    padding: 40px;
+  }
+  
+  .exhheading {
+    padding-top: 55px;
+      font-size: xx-large;
+      padding-bottom: 30px;
+      text-align: center;
+  }
+
+  
+  
+  .exhname {
+    font-weight: lighter;
+    font-family: 'Poiret One';
+  }
+  
+  .exhtexth6 {
+    padding-bottom: 10px;
+  }
+  
+  .icons {
+    padding: 30px;
+    transition:.5s; /* this is grow duration */
+  }
+  
+  .icons:hover {
+      transform:scale(1.5); /* this is grow amount */
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  #exhibitions1 {
+    background-image: url(art/elation.png), black;
+    padding-bottom: 30px;
+    height: 650px;
+    color: white;
+    display: none;
+  }
+  
+  #exhibitions2 {
+    background-image: url(art/humanfishbg.png), black;
+    padding-bottom: 30px;
+    height: 650px;
+    color: white;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 749px) and (max-width: 900px) {
+  .icons {
+    padding: 0px 10px 0px 10px;
+  } 
+.exhimg {
+  width: 400px;
+  height: 100%;
+}
+}
+
+@media screen and (min-width: 697px) and (max-width: 749px) {
+  .icons {
+    padding: 0px 10px 0px 10px; 
+  } 
+.exhimg {
+  width: 400px;
+  height: 100%;
+}
+
+.exhtext {
+  width: 400px;
+  height: auto;
+  padding: 20px 0px 20px -20px;
+  text-align: left;
+}
+}
+
+footer {
+  background: black;
+  color: white;
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: space-around;
+  padding:30px 10px 10px 10px;
+}
+.lfooter {
+  padding-bottom: 20px;
+}
+.fheading {
+  font-size: 30px; 
+  padding-bottom: 10px;
+  font-weight: lighter;
+  font-family: 'Poiret One';
+}
+
+.ftexts {
+  padding-bottom: 10px;
+}
+
+@media screen and (min-width: 600px){
+  footer {
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    padding: none;
+
+  }
+}
+
+
+
+
