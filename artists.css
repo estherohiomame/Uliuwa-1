@@ -45,8 +45,8 @@
   }
 
   .navlist li {
-   margin: 20px;
-   padding: 10px 0px;  
+   margin-bottom: 20px;
+   padding: 10px 10px;  
   }
   .navlist li:hover, .navlink.active {
     background-color: gold;
