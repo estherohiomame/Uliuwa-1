@@ -148,14 +148,11 @@ padding-top: 5px;
   }
   
   .display > p {
-    float: left;
     vertical-align: bottom;
     line-height: 40px;
     background-color: gold;
     padding-left: 10px;
     padding-right: 10px; 
-    margin-top: 300px;
-    margin-left: 10px;
     margin-bottom: 10px;
   }
   
@@ -194,7 +191,7 @@ padding-top: 5px;
   background-size: 60% 100%;
 }
 #img2 {
-  background-image: url(art/Storekeeper\s\ Delight\,\ 48in\ x\ 48in\,\ oil\ on\ canvas\,\ 2007.jpg);
+  background-image: url(art/Storekeeper\'s\ Delight\,\ 48in\ x\ 48in\,\ oil\ on\ canvas\,\ 2007.jpg);
   height: 500px;
   background-repeat: no-repeat;
   background-position: center;
