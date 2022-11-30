@@ -153,27 +153,28 @@ padding-top: 5px;
 
   
   .display > p {
-
-    vertical-align: bottom;
+  margin: 0 auto;    
+  vertical-align: bottom;
     line-height: 40px;
     background-color: gold;
     padding-left: 10px;
     position: absolute;
     padding-right: 10px; 
     margin-bottom: 0px;
+    width: 100%;
     bottom: 0;  }
   
 
   .aicons {
     color: gold;
-    margin-top: 400px;
+    margin-top: 410px;
     display: none;
     padding-right: 10px;
   }
 
   .picons {
     color: gold;
-    margin-top: 400px;
+    margin-top: 420px;
     padding-right: 10px;
   }
 
