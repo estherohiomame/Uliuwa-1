@@ -20,6 +20,13 @@ function showExh1() {
     document.getElementById('exhibitions0').style.display = "none";
     document.getElementById('exhibitions1').style.display = "none";
  }
-
+function showAbout() {
+   const about = document.getElementById('about');
+   about.scrollIntoView;
+}
  var thisYear = new Date().getFullYear();
  document.getElementById("year").innerHTML = thisYear;
+
+  $("a").creep({
+    speed: 2000
+  });
