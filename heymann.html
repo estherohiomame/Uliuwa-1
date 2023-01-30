@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ogbemi Heymann - Uliuwa</title>
+        <meta  charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="heymann.css" rel="stylesheet">
+       <meta name="theme-color" content="#ffd700">
+       <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>         
+        <script src="https://kit.fontawesome.com/106e912e00.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo navbar-brand">
+                <img src="logo.png" alt="Uliuwa" class="mobile-logo" id="logo">
+             <span>
+            <a href="javascript:void(0)" class="navcl" id="navshow" onclick="navShow()">
+                <i class="fa-solid fa-bars"></i>
+            </a></span>
+            <span>
+                <a href="javascript:void(0)" class="navcl" id="navhide" onclick="navHide()">
+                    <i class="fa-solid fa-x"></i>
+                </a></span>
+            </div>
+            
+            <ul class='navlist' id="navList">
+                <li><a href="index.html" class="navlink">Home</a></li>
+                <li><a href="index.html#about" class="navlink" onclick="navHide()">About</a></li>
+                <li><a href="" class="navlink">Gallery</a></li>
+                <li><a href="#exhibitions" class="navlink">Exhibitions</a></li>
+                <li><a href="artists.html" class="navlink" >Artists</a></li>
+
+            <script>
+                function navShow() {
+                    document.getElementById('navList').style.display = 'block';
+                    document.getElementById('navshow').style.display = 'none';
+                    document.getElementById('navhide').style.display = 'block';      
+                }
+                function navHide() {
+                    document.getElementById('navList').style.display = 'none';
+                    document.getElementById('navshow').style.display = 'block';
+                    document.getElementById('navhide').style.display = 'none';       
+                }
+            </script>
+        </nav>
+    </header>
+<main>
+   <section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="art/Majority Leader, Acrylic on canvas, 36in x 36in, 2020.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img src="art/Enticement, 48in x 48in, Acrylic on canvas, 2021.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img src="art/Caretaker, Acrylic on canvas, 48 inches by 48 inches, 2019.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+              <img src="art/Desire III, Acrylic on canvas, 42in x 36in 2022.jpg" alt="">
+            </li>
+            <li class="splide__slide">
+                <img src="art/Reflection II, Acrylic on canvas, 36in x 36in, 2022.jpg" alt="">
+              </li>
+          </ul>
+        </div>
+
+      
+      
+      <ul id="thumbnails" class="thumbnails">
+        <li class="thumbnail">
+          <img src="art/Majority Leader, Acrylic on canvas, 36in x 36in, 2020.jpg" alt="">
+        </li>
+        <li class="thumbnail">
+          <img src="art/Enticement, 48in x 48in, Acrylic on canvas, 2021.jpg" alt="">
+        </li>
+        <li class="thumbnail">
+          <img src="art/Caretaker, Acrylic on canvas, 48 inches by 48 inches, 2019.jpg" alt="">
+        </li>
+        <li class="thumbnail">
+          <img src="art/Enticement, 48in x 48in, Acrylic on canvas, 2021.jpg" alt="">
+        </li>
+        <li class="thumbnail">
+            <img src="art/Reflection II, Acrylic on canvas, 36in x 36in, 2022.jpg" alt="">
+          </li>
+      </ul>
+<script>
+var splide = new Splide( '#main-carousel', {
+    pagination: false,
+  } );
+  
+  
+  var thumbnails = document.getElementsByClassName( 'thumbnail' );
+  var current;
+  
+  
+  for ( var i = 0; i < thumbnails.length; i++ ) {
+    initThumbnail( thumbnails[ i ], i );
+  }
+  
+  
+  function initThumbnail( thumbnail, index ) {
+    thumbnail.addEventListener( 'click', function () {
+      splide.go( index );
+    } );
+  }
+  
+  
+  splide.on( 'mounted move', function () {
+    var thumbnail = thumbnails[ splide.index ];
+  
+  
+    if ( thumbnail ) {
+      if ( current ) {
+        current.classList.remove( 'is-active' );
+      }
+  
+  
+      thumbnail.classList.add( 'is-active' );
+      current = thumbnail;
+    }
+  } );
+  
+  
+  splide.mount();
+  </script>
+      </section>
+
+
+
+
+
+
+      
+        <div class="about-cnt">
+            <div><img class="aboutimg" src="O. Heymann.jpg"></div>
+            <div class="abouttext">
+                <h3>About Ogbemi</h3>
+                <p class="about">Born in Jakpa, Warri-North, Delta State of Nigeria in May 28, 1967, Heymann Ogbemi has had a brief but career-defining stint with studying Mass Communication at the Diploma level after which he enrolled and graduated from the Department of Fine and Applied Art of Auchi Polytechnics in Edo State between 1991 and 1996. Adding to this formal educational background is his exposure in artist’s workshops locally and internationally and a natural love for bricolage which exposed him to variety of things, processes and haptic connections to materials as ‘things to think with’. These formal and informal spectrum of experiences inform a deep sense of interrogating issues with the aim of coming up with informed solutions. Painting as an expression therefore provides a language to express his research into human conditions as it pertains to the issues of leadership and citizenship.</p>
+                <span><strong>Artists Statement:</strong></span><p class="statement">I have often use the shape shifting forms of human-apes as both metaphor and allegory to address socio-political issues of my country as they have the power to connotatively say so much while involving the viewer into the process of meaning making. Combining allegory and satire in depicting the socio-political realities of my society is a strategy that comes naturally for me as a way to reach not only the intellect of viewers of my work but also ignite their emotions on salient and contemporary happenings that need critical interrogations. For me, art should be seen beyond the banality of ‘art for art sake’ and play other important functions that goes beyond ornamentation of existing architectural spaces. It is the above believe that conflates with my predilection to understanding phenomena around me and infusing it into my paintings as allegorical testaments of our time which is simultaneously, reflective of the time and yet timeless.</p>
+            </div>
+        </div>
+         
+    </section> 
+    <section id="display">
+        <div class="display" id="img1">
+           
+            <p>Cold 1, 48in x 48in, oil on canvas, 2003</p> 
+            <i class="fa-solid fa-right-long aicons fa-2x" onclick="showImg2()"></i>
+            <i class="fa-solid fa-left-long aicons fa-2x" onclick="showImg4()"></i>
+            <i class="fa-solid fa-left-long picons fa-2x" onclick="showImg4()"></i>
+            <i class="fa-solid fa-right-long picons fa-2x" onclick="showImg2()"></i>
+            
+            
+        </div>
+        <div class="display" id="img2">
+            <p>Single Room, Acrylic on canvas, 31.5in x 31.5in, 2012</p>
+            <i class="fa-solid fa-right-long aicons fa-2x" onclick="showImg1()"></i>
+            <i class="fa-solid fa-left-long aicons fa-2x" onclick="showImg3()"></i>
+            <i class="fa-solid fa-left-long picons fa-2x" onclick="showImg1()"></i>
+            <i class="fa-solid fa-right-long picons fa-2x" onclick="showImg3()"></i>
+            
+        </div>
+        <div class="display" id="img3">
+            <p>Monkey-Banana Economy  48in x 48in, oil on canvas, 2001</p>
+            <i class="fa-solid fa-right-long aicons fa-2x" onclick="showImg2()"></i>
+            <i class="fa-solid fa-left-long aicons fa-2x" onclick="showImg4()"></i>
+            <i class="fa-solid fa-left-long picons fa-2x" onclick="showImg2()"></i>
+            <i class="fa-solid fa-right-long picons fa-2x" onclick="showImg4()"></i>
+            
+        </div>
+        <div class="display" id="img4">
+            <p>Majority Leader, Acrylic on canvas, 36in x 36in, 2020</p>
+            <i class="fa-solid fa-right-long aicons fa-2x" onclick="showImg3()"></i>
+            <i class="fa-solid fa-left-long aicons fa-2x" onclick="showImg1()"></i>
+            <i class="fa-solid fa-left-long picons fa-2x" onclick="showImg3()"></i>
+            <i class="fa-solid fa-right-long picons fa-2x" onclick="showImg1()"></i>
+            
+        </div>
+<script>
+    function showImg2() {
+        document.querySelector("#img2").style.display = "block";
+        document.querySelector("#img1").style.display = "none";
+        document.querySelector("#img3").style.display = "none";
+        document.querySelector("#img4").style.display = "none";
+    }
+    function showImg3() {
+        document.querySelector("#img3").style.display = "block";
+        document.querySelector("#img1").style.display = "none";
+        document.querySelector("#img2").style.display = "none";
+        document.querySelector("#img4").style.display = "none";
+    }
+    function showImg4() {
+        document.querySelector("#img4").style.display = "block";
+        document.querySelector("#img1").style.display = "none";
+        document.querySelector("#img3").style.display = "none";
+        document.querySelector("#img2").style.display = "none";
+    }
+    function showImg1() {
+        document.querySelector("#img1").style.display = "block";
+        document.querySelector("#img2").style.display = "none";
+        document.querySelector("#img3").style.display = "none";
+        document.querySelector("#img4").style.display = "none";
+    }
+</script>
+    </section>
+    <section id="exhibitions">
+        <div id="exhibitions0">
+        <div class="exheading">
+        <h2 class="exhheading">Exhibitions</h2>
+        <a href="#" class="active aexh">Current</a>
+        <a href="#" class="aexh">Upcoming</a></div>
+        <div class="exh1">
+            <div class="exhimage">
+        <img class="exhimg" src="art/Caretaker, Acrylic on canvas, 48 inches by 48 inches, 2019.jpg" alt="Desire II, Acrylic on canvas, 36in x 36in 2022"></div>        
+        <div class="exhtext">
+         <h3 class="exhname">Desire II</h3>
+        <h6 class="exhtexth6">July 14, 2022 to August 17, 2022</h6>
+        <p class="desctext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id semper risus in hendrerit gravida rutrum quisque. Eu turpis egestas pretium aenean pharetra magna ac placerat. Facilisi cras fermentum odio eu. Commodo odio aenean sed adipiscing.</p>
+       <div class="exhicons"><i class="fa-solid fa-left-long icons fa-2x" onclick="showExh2()"></i>
+            <i class="fa-solid fa-right-long icons fa-2x" onclick="showExh1()"></i>
+        </div></div></div>
+        </div>
+        <div id="exhibitions1">
+            <div class="exheading">
+            <h2 class="exhheading">Exhibitions</h2>
+            <a href="#" class="active aexh">Current</a>
+            <a href="#" class="aexh">Upcoming</a></div>
+            <div class="exh1">
+                <div class="exhimage">
+            <img class="exhimg" src="art/Desire III, Acrylic on canvas, 42in x 36in 2022.jpg" alt="Elation"></div>        
+            <div class="exhtext">
+             <h3 class="exhname">Desire III</h3>
+            <h6 class="exhtexth6">July 14, 2022 to August 17, 2022</h6>
+            <p class="desctext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id semper risus in hendrerit gravida rutrum quisque. Eu turpis egestas pretium aenean pharetra magna ac placerat. Facilisi cras fermentum odio eu. Commodo odio aenean sed adipiscing.</p>
+           <div class="exhicons"><i class="fa-solid fa-left-long icons fa-2x" onclick="showExh()"></i>
+                <i class="fa-solid fa-right-long icons fa-2x" onclick="showExh2()"></i>
+            </div></div></div>
+            </div>
+
+            <div id="exhibitions2">
+                <div class="exheading">
+                <h2 class="exhheading">Exhibitions</h2>
+                <a href="#" class="active aexh">Current</a>
+                <a href="#" class="aexh">Upcoming</a></div>
+                <div class="exh1">
+                <div class="exhimage">
+                <img class="exhimg" src="art/Enticement, 48in x 48in, Acrylic on canvas, 2021.jpg"></div>        
+                <div class="exhtext">
+                <h3 class="exhname">Enticement</h3>
+                <h6 class="exhtexth6">July 14, 2022 to August 17, 2022</h6>
+                <p class="desctext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id semper risus in hendrerit gravida rutrum quisque. Eu turpis egestas pretium aenean pharetra magna ac placerat. Facilisi cras fermentum odio eu. Commodo odio aenean sed adipiscing.</p>
+               <div class="exhicons"><i class="fa-solid fa-left-long icons fa-2x" onclick="showExh1()"></i>
+                <i class="fa-solid fa-right-long icons fa-2x" onclick="showExh()"></i>
+                </div></div></div>
+                </div>
+                <script>
+function showExh1() {
+   document.getElementById('exhibitions1').style.display = "block";
+   document.getElementById('exhibitions0').style.display = "none";
+   document.getElementById('exhibitions2').style.display = "none";
+}
+
+function showExh() {
+   document.getElementById('exhibitions0').style.display = "block";
+   document.getElementById('exhibitions1').style.display = "none";
+   document.getElementById('exhibitions2').style.display = "none";
+}
+    
+function showExh2() {
+   document.getElementById('exhibitions2').style.display = "block";
+   document.getElementById('exhibitions0').style.display = "none";
+   document.getElementById('exhibitions1').style.display = "none";
+}
+                </script>
+        <footer>
+            <div class="lfooter">
+                <h2 class="fheading">Contact Us</h2>
+                <p class="ftexts">No 14, Wealth Road, Lekki Phase One, VI, Lagos</p>
+                <p class="ftext">Call us: <a href="tel:+2348166062298">08166062298</a></p>
+            </div>
+            <div class="rfooter">
+                <h1 class="fheading">Uliuwa</h1>
+        <p class="ftexts"><span id="year"></span> Uliuwa</p>
+        <p class="ftext">Created by Esther Ohiomame</p> 
+    </div>
+    <script>
+        var thisYear = new Date().getFullYear();
+        document.getElementById("year").innerHTML = thisYear
+      </script>
+
+            </div>
+    </footer>
+</section>
+</main>
+</body></html>
