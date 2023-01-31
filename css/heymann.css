@@ -142,15 +142,20 @@ text-align: center;
   margin: 0 auto;
 } 
 
-  .abouttext > h3, .abouttext > span {
+  .abouttext > h3 {
       text-align: center;
       font-size: 40px;
   }
   
-  .abouttext > p {
+  .abouttext p {
       text-align: justify;
   }
 
+
+  .about {
+      margin-bottom: 20px;
+  
+    }
 @media screen and (max-width: 600px) {
   .about-cnt {
     grid-template-columns: auto;

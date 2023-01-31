@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;   
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Didact Gothic';
+ }
+
+ html {
+    scroll-behavior: smooth;
+    width: fit-content !important;
+
+  }
+  
+  body{
+    background: black;
+    color: white;
+    max-width: 100%;
+  }
+
+#navlist {
+  text-align: center;
+  padding-top: 100px;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+
+} 
+
+.navlinks, .navlink, #navlink  {
+  padding-bottom: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.show {
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background:fixed black
+
+}
+
+.logo {
+    display: inline-block;
+    padding-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 100;
+    z-index: 1000000000000000000000000000000000000;
+
+  }
+@media (min-width: 700px) {
+  .logo {
+    display: inline-block;
+    padding-top: 23px; }
+
+  #navlist {
+    text-align: right;
+    background-color: black;
+    display: inline-block;
+    margin-left: auto;
+    height: 70px;
+    width: fit-content;
+    margin-left: auto; 
+    padding-top: 0px;
+    position: static;
+    padding-right: 50px;
+  }
+ 
+  .navlink {
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 23px;
+    font-family: 'Poiret One';
+  }
+ 
+  .navlinks {
+    display: inline-block;
+    padding-top: 20px;
+    font-family: 'Poiret One';
+  }
+ 
+  #navlink {
+    transition: .5s;
+    color: white;
+    text-decoration: none;
+  }
+ 
+  #navlink:hover {
+    font-size: 18px;
+  }
+
+  .icon-three {
+    display: none;
+  }
+
+}
+
+.hamburger {
+  top:50%;
+  left:10%;
+  width: 30px;
+  height: 3px;
+  background: #FCFCFC;
+  position: absolute;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+  transition: 0.5s;
+}
+
+.hamburger:before {
+  top: -10px;
+}
+
+.hamburger:after {
+  top: 10px;
+}
+
+.icon-three {
+  position: absolute;
+  left: 85%;
+  width: auto;
+  height: auto;
+  cursor: pointer;
+  z-index: 1;
+  top: 30px;
+}
+
+.hamburger-three:before,
+.hamburger-three:after {
+  content: '';
+  position:absolute;
+  width: 30px;
+  height: 3px;
+  background:#FCFCFC;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition:0.5s;
+}
+
+.icon-three.active-three .hamburger-three {
+  background:rgba(0,0,0,0);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+}
+
+.icon-three.active-three .hamburger-three:before {
+  top: 0;
+  transform:rotate(135deg);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.icon-three.active-three .hamburger-three:after {
+  top: 0;
+  transform:rotate(225deg);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.splide__slide {
+  text-align: center;
+  width: 100%;
+    }
+  .header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+    #main-carousel .splide__slide img {
+      width: 100%;
+      height: 95vh;
+      position: relative;
+    }
+
+.heading {
+  font-size: 50px;
+  
+}
+  
+    .thumbnails {
+      display: flex;
+      margin: -7rem auto 0;
+      padding: 0;
+      z-index: 0;
+      position:sticky;
+      justify-content: center;
+    }
+    
+    .thumbnail {
+      width: 60px;
+      height: 60px;
+      overflow: hidden;
+      list-style: none;
+      margin: 0 0.2rem;
+      cursor: pointer;
+      box-shadow: 4px 3px 4px 3px rgba(0, 0, 0, 0.452);
+    }
+    
+    .thumbnail img {
+      width: 100%;
+      height: auto;
+    }
+
+    .about-cnt {
+      display: grid;
+      grid-template-columns: auto auto;
+      background-color: black;
+      color: white;
+      column-gap: 40px;
+      margin: 100px 40px 50px 40px;
+      justify-content: center;
+    }
+    
+
+    .abouttext p {
+      text-align: justify;
+  }
+
+
+  .about {
+      margin: 20px 0px;
+  
+    }
+
+    
+    @media (max-width: 600px) {
+      .about-cnt {
+        display: grid;
+        grid-template-columns: auto auto;
+        background-color: black;
+        color: white;
+        column-gap: 40px;
+        margin: 70px 20px 50px 20px;
+        justify-content: center;
+      }
+    }
+
+    .aboutimg {
+      width: 90vw;
+      height: 100%;
+      margin: 0 auto;
+    } 
+    
+      .abouttext > h3, .abouttext > span {
+          font-size: 40px;
+      }
+      
+      .abouttext > p {
+          text-align: justify;
+      }
+    
+    @media screen and (max-width: 600px) {
+      .about-cnt {
+        grid-template-columns: auto;
+        row-gap: 20px;
+      }
+      .statement, .about {
+        padding: 20px;
+      }
+    }
+
+    .aboutimg {
+      width: 500px;
+      height: 100%;
+      margin: 0 auto;
+    } 

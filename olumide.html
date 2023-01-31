@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Uliuwa - The Home of African Art</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/olumide.css" rel="stylesheet">
+        <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>         
+        <script src="https://kit.fontawesome.com/106e912e00.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    <header>
+        <nav>
+            <div class="logo">
+              Uliuwa
+            </div>
+            <div class="icon-three">
+              <div class="hamburger hamburger-three"></div>
+            </div>
+            <ul id="navlist" class="show">
+             <li class="navlinks"><a id="navlink" href="index.html#about">About</a></li>
+             <li class="navlink"><a id="navlink" href="#artists">Artists</a></li>
+             <li class="navlink"><a id="navlink" href="#exhibitions">Exhibitions</a></li>
+             <li class="navlink"><a id="navlink" href="#footer">Contact</a></li>
+            </ul>
+         </nav>
+    </header>
+    <section id="main-carousel" class="splide" aria-label="Header-Slide">
+      <div class="header"><h1 class="heading"></h1>
+      <p class="title"></p></div>
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <img src="art/olumide (12).jpg" alt="">
+            <div class="header"><h1 class="heading">Olumide Onadipe</h1>
+              <p class="title"></p></div>
+          </li>
+          <li class="splide__slide">
+            <img src="art/olumide (17).jpg" alt="">
+            <div class="header"><h1 class="heading">Olumide Onadipe</h1>
+              <p class="title"></p></div>
+          </li>
+          <li class="splide__slide">
+            <img src="art/olumide (41).jpg" alt="">
+            <div class="header"><h1 class="heading">Olumide Onadipe</h1>
+              <p class="title"></p></div>
+          </li>
+          <li class="splide__slide">
+            <img src="art/olumide (15).jpg" alt="">
+            <div class="header"><h1 class="heading">Olumide Onadipe</h1>
+              <p class="title"></p></div>
+          </li>
+          <li class="splide__slide">
+              <img src="art/olumide (27).jpg" alt="">
+              <div class="header"><h1 class="heading">Olumide Onadipe</h1>
+                <p class="title"></p></div>
+            </li>
+          <li class="splide__slide">
+            <img src="art/olumide (47).jpg" alt="">
+            <div class="header"><h1 class="heading">Olumide Onadipe</h1>
+              <p class="title"></p></div>
+          </li>
+          <li class="splide__slide">
+            <img src="art/olumide (30).jpg" alt="">
+            <div class="header"><h1 class="heading">Olumide Onadipe</h1>
+              <p class="title"></p></div>
+          </li>
+          <li class="splide__slide">
+            <img src="art/olumide (22).jpg" alt="">
+            <div class="header"><h1 class="heading">Olumide Onadipe</h1>
+              <p class="title"></p></div>
+          </li>
+        </ul>
+      </div>
+
+    
+    
+    <ul id="thumbnails" class="thumbnails">
+      <li class="thumbnail">
+        <img src="art/olumide (12).jpg" alt="">
+      </li>
+      <li class="thumbnail">
+        <img src="art/olumide (17).jpg" alt="">
+      </li>
+      <li class="thumbnail">
+        <img src="art/olumide (41).jpg" alt="">
+      </li>
+      <li class="thumbnail">
+        <img src="art/olumide (15).jpg" alt="">
+      </li>
+      <li class="thumbnail">
+        <img src="art/olumide (27).jpg" alt="">
+      </li>
+      <li class="thumbnail">
+        <img src="art/olumide (47).jpg" alt="">
+      </li>
+      <li class="thumbnail">
+        <img src="art/olumide (30).jpg" alt="">
+      </li>
+      <li class="thumbnail">
+        <img src="art/olumide (22).jpg" alt="">
+      </li>
+    </ul>
+<script>
+var splide = new Splide( '#main-carousel', {
+  pagination: false,
+} );
+
+
+var thumbnails = document.getElementsByClassName( 'thumbnail' );
+var current;
+
+
+for ( var i = 0; i < thumbnails.length; i++ ) {
+  initThumbnail( thumbnails[ i ], i );
+}
+
+
+function initThumbnail( thumbnail, index ) {
+  thumbnail.addEventListener( 'click', function () {
+    splide.go( index );
+  } );
+}
+
+
+splide.on( 'mounted move', function () {
+  var thumbnail = thumbnails[ splide.index ];
+
+
+  if ( thumbnail ) {
+    if ( current ) {
+      current.classList.remove( 'is-active' );
+    }
+
+
+    thumbnail.classList.add( 'is-active' );
+    current = thumbnail;
+  }
+} );
+
+
+splide.mount();
+</script>
+</section>
+<section>
+  <div class="about-cnt">
+    <div><img class="aboutimg" src="images/Daniel O - Photograph.jpg"></div>
+    <div class="abouttext">
+        <h3>About Ogbemi</h3>
+        <p class="about">Born in Jakpa, Warri-North, Delta State of Nigeria in May 28, 1967, Heymann Ogbemi has had a brief but career-defining stint with studying Mass Communication at the Diploma level after which he enrolled and graduated from the Department of Fine and Applied Art of Auchi Polytechnics in Edo State between 1991 and 1996. Adding to this formal educational background is his exposure in artist’s workshops locally and internationally and a natural love for bricolage which exposed him to variety of things, processes and haptic connections to materials as ‘things to think with’. These formal and informal spectrum of experiences inform a deep sense of interrogating issues with the aim of coming up with informed solutions. Painting as an expression therefore provides a language to express his research into human conditions as it pertains to the issues of leadership and citizenship.</p>
+        <p class="statement"><strong>Artists Statement: </strong>I have often use the shape shifting forms of human-apes as both metaphor and allegory to address socio-political issues of my country as they have the power to connotatively say so much while involving the viewer into the process of meaning making. Combining allegory and satire in depicting the socio-political realities of my society is a strategy that comes naturally for me as a way to reach not only the intellect of viewers of my work but also ignite their emotions on salient and contemporary happenings that need critical interrogations. For me, art should be seen beyond the banality of ‘art for art sake’ and play other important functions that goes beyond ornamentation of existing architectural spaces. It is the above believe that conflates with my predilection to understanding phenomena around me and infusing it into my paintings as allegorical testaments of our time which is simultaneously, reflective of the time and yet timeless.</p>
+    </div>
+</div>  
+</section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
+    <script src="index.js"></script>
+    </body>
+</html>
