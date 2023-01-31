@@ -1,4 +1,9 @@
 document.querySelector('.icon-three').addEventListener("click", function() {
+   document.querySelector('.icon-three').classList.toggle('active-three');
+   document.querySelector('#navlist').classList.toggle('show');
+});
+
+document.querySelector('.navlink').addEventListener("click", function() {
     document.querySelector('.icon-three').classList.toggle('active-three');
     document.querySelector('#navlist').classList.toggle('show');
 });
