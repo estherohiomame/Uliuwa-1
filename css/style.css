@@ -20,13 +20,11 @@
   }
 
 #navlist {
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%, 0);
   text-align: center;
   padding-top: 100px;
   background-color: black;
   width: 100%;
+  position: fixed;
 
 } 
 
@@ -53,9 +51,7 @@
     position: static;
     left: 0;
     transform: translate(0px);
-  
     padding-top: 0px;
-
   }
  
   .navlink {
@@ -112,10 +108,11 @@
 .icon-three {
   position: absolute;
   left: 85%;
-  width: 90px;
-  height: 90px;
+  width: auto;
+  height: auto;
   cursor: pointer;
   z-index: 1;
+  top: 30px;
 }
 
 .hamburger-three:before,
