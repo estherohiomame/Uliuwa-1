@@ -8,6 +8,11 @@ document.querySelector('.navlink').addEventListener("click", function() {
     document.querySelector('#navlist').classList.toggle('show');
 });
 
+document.querySelector('.navlinks').addEventListener("click", function() {
+   document.querySelector('.icon-three').classList.toggle('active-three');
+   document.querySelector('#navlist').classList.toggle('show');
+});
+
 function showExh1() {
     document.getElementById('exhibitions1').style.display = "block";
     document.getElementById('exhibitions0').style.display = "none";
