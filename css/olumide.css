@@ -580,6 +580,38 @@ nav {
   .ftexts {
     padding-bottom: 10px;
   }
+
+  
+.fa-brands {  
+  transition:.5s; /* this is grow duration */
+}  
+
+.fa-brands:hover {
+  transform:scale(1.5); /* this is grow amount */
+  }
+
+.fa-facebook {  
+  background: transparent;  
+  padding-right: 35px; 
+  color: white;  
+}  
+
+.fa-twitter {  
+  background: transparent;  
+  color: white; 
+  padding-left: 35px;
+ }
+
+.fa-instagram {  
+    background: transparent;  
+    color: white; 
+   }
+
+
+
+.socmedia {
+     padding: 20px; 
+    }
   
   @media screen and (min-width: 600px){
     footer {
