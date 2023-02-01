@@ -229,7 +229,7 @@ nav {
     }
 
     .aboutimg {
-      width: 90%;
+      width: 100%;
       height: 100%;
       max-height: 600px;
       margin: 0 auto;
@@ -290,11 +290,12 @@ nav {
     background: white;
     position: relative;
     text-align: center;
+    height: fit-content;
    }
 
    .artwork {
     width: 80%;
-    height: auto;
+    height: 100%;
    }
 
   .art-title {
@@ -304,6 +305,7 @@ nav {
     padding: 10px;
     display: inline-block;
     text-align: left;
+    margin-bottom: 10px;
     background-color: rgb(245, 209, 3);
   }
 
@@ -354,3 +356,243 @@ nav {
   #img2, #img3, #img4, #img5 {
     display: none;
   }
+
+  .exheading {
+    text-align: center;
+  }
+  
+  .aexh {
+     padding: 0px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .exhname {
+    font-family: 'Poiret One';
+  }
+  
+  .exhtexth6 {
+    padding-bottom: 15px;
+  }
+  
+  .exhimg {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  
+  .exh1 {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 90%;
+    margin: 0 auto;
+    justify-content: space-around;
+    row-gap: 20px;
+  }
+  
+  .exhtext {
+    text-align: justify;
+    line-height: 20px;
+  }
+  
+  .exhicons {
+    text-align: left;
+    padding-top: 20px;
+    
+  }
+  
+  .icons {
+    padding: 0px 10px 0px 10px;
+    transition: 300ms;
+  }
+  
+  .icons:hover {
+    transform: scale(1.2, 1.5);
+  }
+  
+  #exhibitions0 {
+    background: url(../images/uliuwahero.png);
+    color: white;
+    padding-bottom: 30px;
+  }
+  
+  .exhheading {
+    font-size: 40px;
+    font-weight: lighter;
+    font-family: 'Poiret One';
+    padding: 10px 0px;  
+  }
+  
+  #exhibitions1 {
+    background-image: url(../images/elation.png);
+    padding-bottom: 30px;
+    color: white;
+    display: none;
+  }
+  
+  #exhibitions2 {
+    background-image: url(../images/humanfishbg.png);
+    padding-bottom: 30px;
+    color: white;
+    display: none;
+  }
+  
+  @media screen and (min-width: 697px) {
+    #exhibitions0 {
+      height: auto;
+      background: #010101;
+      color: white;
+    }
+    
+    #exhibitions0 {
+      background-image: url(../images/uliuwahero.png), linear-gradient(0deg, rgba(231, 183, 11, 0.5), rgba(231, 183, 11, 0.5));
+      padding-bottom: 30px;
+    
+    }
+    
+    .exheading {
+      text-align: center;
+    }
+    
+    .aexh {
+      padding: 20px 40px;
+      color:azure;
+    }
+    
+    .exh1 {
+     margin:  0 auto;
+     display: inline-flex;
+     width: 100%;
+     justify-content: center;
+    }
+    
+    .exhimg {
+      width: 400px;
+      height: 410px;
+      padding: 40px;
+    }
+    
+    .exhtext {
+      width: 400px;
+      height: 410px;
+      padding: 40px;
+    }
+    
+    .exhheading {
+      padding-top: 55px;
+        font-size: xx-large;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+  
+    
+    
+    .exhname {
+      font-weight: lighter;
+      font-family: 'Poiret One';
+    }
+    
+    .exhtexth6 {
+      padding-bottom: 10px;
+    }
+    
+    .icons {
+      padding: 30px;
+      transition:.5s; /* this is grow duration */
+    }
+    
+    .icons:hover {
+        transform:scale(1.5); /* this is grow amount */
+    }
+    
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    
+    #exhibitions1 {
+      background-image: url(../images/elation.png), black;
+      padding-bottom: 30px;
+      height: 650px;
+      color: white;
+      display: none;
+    }
+    
+    #exhibitions2 {
+      background-image: url(../images/humanfishbg.png), black;
+      padding-bottom: 30px;
+      height: 650px;
+      color: white;
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 749px) and (max-width: 900px) {
+    .icons {
+      padding: 0px 10px 0px 10px;
+    } 
+  .exhimg {
+    width: 400px;
+    height: 100%;
+  }
+  }
+  
+  @media screen and (min-width: 697px) and (max-width: 749px) {
+    .icons {
+      padding: 0px 10px 0px 10px; 
+    } 
+  .exhimg {
+    width: 400px;
+    height: 100%;
+  }
+  
+  .exhtext {
+    width: 400px;
+    height: auto;
+    padding: 20px 0px 20px -20px;
+    text-align: left;
+  }
+  }
+  
+  footer {
+    background: black;
+    color: white;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-around;
+    padding:30px 10px 10px 10px;
+    text-align: center;
+  
+  }
+  .lfooter {
+    padding-bottom: 20px;
+  }
+  .fheading {
+    font-size: 30px; 
+    padding-bottom: 10px;
+    font-weight: lighter;
+    font-family: 'Poiret One';
+  }
+  
+  .ftexts {
+    padding-bottom: 10px;
+  }
+  
+  @media screen and (min-width: 600px){
+    footer {
+      grid-template-columns: auto auto;
+      justify-content: space-around;
+      padding: none;
+      text-align: left;
+    }
+  
+  
+  }
+  
+  
+  
+  
+  
