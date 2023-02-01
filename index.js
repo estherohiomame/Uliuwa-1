@@ -40,6 +40,42 @@ function showAbout() {
   $("a").creep({
     speed: 2000
   });
+  function showImg1() {
+   document.querySelector("#img5").style.display = "none";
+   document.querySelector("#img1").style.display = "block";
+   document.querySelector("#img2").style.display = "none";
+   document.querySelector("#img3").style.display = "none";
+   document.querySelector("#img4").style.display = "none";
+}
 
+  function showImg2() {
+        document.querySelector("#img2").style.display = "block";
+        document.querySelector("#img1").style.display = "none";
+        document.querySelector("#img3").style.display = "none";
+        document.querySelector("#img4").style.display = "none";
+        document.querySelector("#img5").style.display = "none";
+    }
 
-  
+    function showImg3() {
+      document.querySelector("#img3").style.display = "block";
+      document.querySelector("#img1").style.display = "none";
+      document.querySelector("#img2").style.display = "none";
+      document.querySelector("#img4").style.display = "none";
+      document.querySelector("#img5").style.display = "none";
+  }
+
+  function showImg4() {
+   document.querySelector("#img4").style.display = "block";
+   document.querySelector("#img1").style.display = "none";
+   document.querySelector("#img2").style.display = "none";
+   document.querySelector("#img3").style.display = "none";
+   document.querySelector("#img5").style.display = "none";
+}
+
+function showImg5() {
+   document.querySelector("#img5").style.display = "block";
+   document.querySelector("#img1").style.display = "none";
+   document.querySelector("#img2").style.display = "none";
+   document.querySelector("#img3").style.display = "none";
+   document.querySelector("#img4").style.display = "none";
+}
