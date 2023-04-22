@@ -227,16 +227,17 @@
         }
     }
 
-    .artists {
 
-      display: grid;
-      grid-template-columns: auto;
-      justify-content: center;
-      row-gap: 30px;
-      text-align: center;
-      margin: 40px auto 0 auto;
+      .artists {
+        display: flex;
+        justify-content: center;
+        row-gap: 30px;
+        text-align: center;
+        margin: 40px auto 0 auto;
+        flex-direction: column;
     }
 
+    
     .artist h4, .artist p {
       text-align: left;
       padding-left: 20px;
