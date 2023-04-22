@@ -55,7 +55,7 @@ nav {
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     font-weight: 100;
-    z-index: 1000000000000000000000000000000000000;
+    z-index: 100000000;
 
   }
 @media (min-width: 700px) {
@@ -174,7 +174,7 @@ nav {
   }
     #main-carousel .splide__slide img {
       width: 100%;
-      height: 90vh;
+      height: 100vh;
       position: relative;
     }
 

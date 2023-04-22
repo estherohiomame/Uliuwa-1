@@ -4,7 +4,7 @@
         <title>Ogbemi Heymann - Uliuwa</title>
         <meta  charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/heymann.css" rel="stylesheet">
+        <link href="css/artist.css" rel="stylesheet">
        <meta name="theme-color" content="#ffd700">
        <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
@@ -14,39 +14,20 @@
     <body>
 
     <header>
-        <nav class="navbar">
-            <div class="logo navbar-brand">
-                <img src="logo.png" alt="Uliuwa" class="mobile-logo" id="logo">
-             <span>
-            <a href="javascript:void(0)" class="navcl" id="navshow" onclick="navShow()">
-                <i class="fa-solid fa-bars"></i>
-            </a></span>
-            <span>
-                <a href="javascript:void(0)" class="navcl" id="navhide" onclick="navHide()">
-                    <i class="fa-solid fa-x"></i>
-                </a></span>
-            </div>
-            
-            <ul class='navlist' id="navList">
-                <li><a href="index.html" class="navlink">Home</a></li>
-                <li><a href="index.html#about" class="navlink" onclick="navHide()">About</a></li>
-                <li><a href="" class="navlink">Gallery</a></li>
-                <li><a href="#exhibitions" class="navlink">Exhibitions</a></li>
-                <li><a href="artists.html" class="navlink" >Artists</a></li>
-
-            <script>
-                function navShow() {
-                    document.getElementById('navList').style.display = 'block';
-                    document.getElementById('navshow').style.display = 'none';
-                    document.getElementById('navhide').style.display = 'block';      
-                }
-                function navHide() {
-                    document.getElementById('navList').style.display = 'none';
-                    document.getElementById('navshow').style.display = 'block';
-                    document.getElementById('navhide').style.display = 'none';       
-                }
-            </script>
-        </nav>
+      <nav>
+        <div class="logo">
+          Uliuwa
+        </div>
+        <div class="icon-three">
+          <div class="hamburger hamburger-three"></div>
+        </div>
+        <ul id="navlist" class="show">
+         <li class="navlinks"><a id="navlink" href="index.html#about">About</a></li>
+         <li class="navlink"><a id="navlink" href="index.html#artists">Artists</a></li>
+         <li class="navlink"><a id="navlink" href="index.html#exhibitions">Exhibitions</a></li>
+         <li class="navlink"><a id="navlink" href="#footer">Contact</a></li>
+        </ul>
+     </nav>
     </header>
 <main>
    <section id="main-carousel" class="splide" aria-label="My Awesome Gallery">
@@ -54,18 +35,23 @@
           <ul class="splide__list">
             <li class="splide__slide">
               <img src="art/Majority Leader, Acrylic on canvas, 36in x 36in, 2020.jpg" alt="">
+              <div class="header"><h1 class="heading">Ogbemi Heymann</h1>
             </li>
             <li class="splide__slide">
               <img src="art/Enticement, 48in x 48in, Acrylic on canvas, 2021.jpg" alt="">
+              <div class="header"><h1 class="heading">Ogbemi Heymann</h1>
             </li>
             <li class="splide__slide">
               <img src="art/Caretaker, Acrylic on canvas, 48 inches by 48 inches, 2019.jpg" alt="">
+              <div class="header"><h1 class="heading">Ogbemi Heymann</h1>
             </li>
             <li class="splide__slide">
               <img src="art/Desire III, Acrylic on canvas, 42in x 36in 2022.jpg" alt="">
+              <div class="header"><h1 class="heading">Ogbemi Heymann</h1>
             </li>
             <li class="splide__slide">
                 <img src="art/Reflection II, Acrylic on canvas, 36in x 36in, 2022.jpg" alt="">
+                <div class="header"><h1 class="heading">Ogbemi Heymann</h1>
               </li>
           </ul>
         </div>
@@ -138,7 +124,7 @@ var splide = new Splide( '#main-carousel', {
 
       
         <div class="about-cnt">
-            <div><img class="aboutimg" src="O. Heymann.jpg"></div>
+            <div><img class="aboutimg" src="images/O. Heymann.jpg"></div>
             <div class="abouttext">
                 <h3>About Ogbemi</h3>
                 <p class="about">Born in Jakpa, Warri-North, Delta State of Nigeria in May 28, 1967, Heymann Ogbemi has had a brief but career-defining stint with studying Mass Communication at the Diploma level after which he enrolled and graduated from the Department of Fine and Applied Art of Auchi Polytechnics in Edo State between 1991 and 1996. Adding to this formal educational background is his exposure in artist’s workshops locally and internationally and a natural love for bricolage which exposed him to variety of things, processes and haptic connections to materials as ‘things to think with’. These formal and informal spectrum of experiences inform a deep sense of interrogating issues with the aim of coming up with informed solutions. Painting as an expression therefore provides a language to express his research into human conditions as it pertains to the issues of leadership and citizenship.</p>
@@ -148,67 +134,48 @@ var splide = new Splide( '#main-carousel', {
          
     </section> 
     <section id="display">
-        <div class="display" id="img1">
-           
-            <p>Cold 1, 48in x 48in, oil on canvas, 2003</p> 
-            <i class="fa-solid fa-right-long aicons fa-2x" onclick="showImg2()"></i>
-            <i class="fa-solid fa-left-long aicons fa-2x" onclick="showImg4()"></i>
-            <i class="fa-solid fa-left-long picons fa-2x" onclick="showImg4()"></i>
-            <i class="fa-solid fa-right-long picons fa-2x" onclick="showImg2()"></i>
-            
-            
-        </div>
-        <div class="display" id="img2">
-            <p>Single Room, Acrylic on canvas, 31.5in x 31.5in, 2012</p>
-            <i class="fa-solid fa-right-long aicons fa-2x" onclick="showImg1()"></i>
-            <i class="fa-solid fa-left-long aicons fa-2x" onclick="showImg3()"></i>
-            <i class="fa-solid fa-left-long picons fa-2x" onclick="showImg1()"></i>
-            <i class="fa-solid fa-right-long picons fa-2x" onclick="showImg3()"></i>
-            
-        </div>
-        <div class="display" id="img3">
-            <p>Monkey-Banana Economy  48in x 48in, oil on canvas, 2001</p>
-            <i class="fa-solid fa-right-long aicons fa-2x" onclick="showImg2()"></i>
-            <i class="fa-solid fa-left-long aicons fa-2x" onclick="showImg4()"></i>
-            <i class="fa-solid fa-left-long picons fa-2x" onclick="showImg2()"></i>
-            <i class="fa-solid fa-right-long picons fa-2x" onclick="showImg4()"></i>
-            
-        </div>
-        <div class="display" id="img4">
-            <p>Majority Leader, Acrylic on canvas, 36in x 36in, 2020</p>
-            <i class="fa-solid fa-right-long aicons fa-2x" onclick="showImg3()"></i>
-            <i class="fa-solid fa-left-long aicons fa-2x" onclick="showImg1()"></i>
-            <i class="fa-solid fa-left-long picons fa-2x" onclick="showImg3()"></i>
-            <i class="fa-solid fa-right-long picons fa-2x" onclick="showImg1()"></i>
-            
-        </div>
-<script>
-    function showImg2() {
-        document.querySelector("#img2").style.display = "block";
-        document.querySelector("#img1").style.display = "none";
-        document.querySelector("#img3").style.display = "none";
-        document.querySelector("#img4").style.display = "none";
-    }
-    function showImg3() {
-        document.querySelector("#img3").style.display = "block";
-        document.querySelector("#img1").style.display = "none";
-        document.querySelector("#img2").style.display = "none";
-        document.querySelector("#img4").style.display = "none";
-    }
-    function showImg4() {
-        document.querySelector("#img4").style.display = "block";
-        document.querySelector("#img1").style.display = "none";
-        document.querySelector("#img3").style.display = "none";
-        document.querySelector("#img2").style.display = "none";
-    }
-    function showImg1() {
-        document.querySelector("#img1").style.display = "block";
-        document.querySelector("#img2").style.display = "none";
-        document.querySelector("#img3").style.display = "none";
-        document.querySelector("#img4").style.display = "none";
-    }
-</script>
-    </section>
+      <div class="display" id="img1">
+         <img class="artwork" src="art/Caretaker, Acrylic on canvas, 48 inches by 48 inches, 2019.jpg">
+          <p class="art-title">Caretaker, Acrylic on canvas, 48 inches by 48 inches, 2019</p> 
+          <div class="icon-directions">
+            <i class="fa-solid fa-left-long picons fa-2x" onclick="showImg5()"></i>
+            <i class="fa-solid fa-right-long picons fa-2x"onclick="showImg2()"></i>
+          </div>
+          </div>
+          <div class="display" id="img2">
+            <img class="artwork" src="art/Circle of friends, Acrylic on canvas, 36in x 42in, 2022.jpg">
+             <p class="art-title">Circle of friends, Acrylic on canvas, 36in x 42in, 2022s</p> 
+             <div class="icon-directions">
+              <i class="fa-solid fa-left-long picons fa-2x" onclick="showImg1()"></i>
+              <i class="fa-solid fa-right-long picons fa-2x"onclick="showImg3()"></i>
+             </div>
+             </div>
+             <div class="display" id="img3">
+              <img class="artwork" src="art/Desire III, Acrylic on canvas, 42in x 36in 2022.jpg">
+               <p class="art-title">Desire III, Acrylic on canvas, 42in x 36in 2022</p> 
+               <div class="icon-directions">
+                <i class="fa-solid fa-left-long picons fa-2x" onclick="showImg2()"></i>
+                <i class="fa-solid fa-right-long picons fa-2x"onclick="showImg4()"></i>
+               </div>
+              </div> 
+               <div class="display" id="img4">
+                <img class="artwork" src="art/Marginal Meal, 48in x 48in, oil on canvas, 2007.jpg">
+                 <p class="art-title">Marginal Meal, 48in x 48in, oil on canvas, 2007</p> 
+                 <div class="icon-directions">
+                  <i class="fa-solid fa-left-long picons fa-2x" onclick="showImg3()"></i>
+                  <i class="fa-solid fa-right-long picons fa-2x"onclick="showImg5()"></i>
+                 </div>
+                 </div>
+                 <div class="display" id="img5">
+                  <img class="artwork" src="art/Possession V, Acrylic on canvas, 48in x 48in, 2022.jpg">
+                   <p class="art-title">Possession V, Acrylic on canvas, 48in x 48in, 2022</p> 
+                   <div class="icon-directions">
+                    <i class="fa-solid fa-left-long picons fa-2x" onclick="showImg4()"></i>
+                    <i class="fa-solid fa-right-long picons fa-2x"onclick="showImg1()"></i>
+                   </div>
+                   </div>
+        
+      </section>
     <section id="exhibitions">
         <div id="exhibitions0">
         <div class="exheading">
@@ -298,4 +265,6 @@ function showExh2() {
     </footer>
 </section>
 </main>
+<script src="index.js"></script>
+
 </body></html>
